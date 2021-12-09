@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <button @click="apple">apple</button>
-    <button @click="two">第二页</button>
+    <button @click="popup">弹窗</button>
   </div>
 </template>
 
@@ -17,9 +17,27 @@ export default {
     apple() {
       this.$router.push("/apple");
     },
-    two() {
-      console.log(this.$router.push("/about"));
+    popup() {
+      this.$router.push("/popup");
     },
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  width: 100vw;
+  height: 100vh;
+  line-height: 0;
+  button {
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+</style>

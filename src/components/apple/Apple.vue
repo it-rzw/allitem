@@ -1,6 +1,6 @@
 <template>
   <div class="apple">
-    <div class="out" @click="outapple">退出</div>
+    <div class="out" @click="outapple">X</div>
     <div class="apple_box">
       <!-- 头部 -->
       <div class="apple_title">
@@ -22,16 +22,28 @@
           </div>
         </div>
       </div>
-      <!-- 手表网站 -->
+      <!-- 手表网页 -->
       <div class="watches_page">
-        <div class="che_con">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+        <div class="ches_con">
+          <div class="ches_box">
+            <div class="ches_head">
+              <p><b>Change</b></p>
+              <p><b>starts within.</b></p>
+            </div>
+            <div class="ches_part">
+              <p>Apple Watch Series 4.</p>
+              <p>Fundamentally redesigned and</p>
+              <p>re-engineered to help you be even</p>
+              <p>more active, healthy, and connectad.</p>
+            </div>
+            <div class="ches_http">
+              <p>Visit website ></p>
+            </div>
+          </div>
+          <div class="ches_btn">Buy</div>
         </div>
-        <div class="che_img">
-          <img src="" alt="" />
+        <div class="ches_img">
+          <img src="../../assets/imgs/che.png" alt="" />
         </div>
       </div>
     </div>
@@ -57,16 +69,19 @@ export default {
 
 <style lang="scss" scoped>
 .apple {
-  height: 100vh;
   background-color: #f5f5f5;
   .out {
     position: fixed;
     top: 0;
     left: 0;
     font-size: 20px;
+    border: 1px solid #ccc;
+    background-color: red;
+    color: #fff;
+    padding: 3px;
   }
   .apple_box {
-    margin: 0 10px;
+    margin: 0 20px;
     .apple_title {
       height: 144px;
       font-size: 18px;
@@ -82,12 +97,12 @@ export default {
           padding: 31px 0px 33px 0px;
           text-align: center;
           img {
-            width: 24.06px;
-            height: 23px;
+            width: 28px;
+            height: 26px;
           }
           span {
             b {
-              font-size: 22.23px;
+              font-size: 24.23px;
               font-weight: bold;
             }
           }
@@ -100,16 +115,73 @@ export default {
         display: flex;
         justify-content: center;
         .tabs_box {
-          width: 260px;
+          width: 320px;
           .tabs {
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: #fff;
-            font-size: 12px;
+            font-size: 14px;
             padding: 16px 0;
           }
         }
+      }
+    }
+    .watches_page {
+      height: 496px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-around;
+      font-size: 12px;
+      border-radius: 8px;
+      .ches_con {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .ches_head {
+          p {
+            b {
+              font-size: 30px;
+              font-weight: bold;
+            }
+          }
+        }
+        .ches_box {
+          height: 230px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-top: -50px;
+          .ches_head {
+            p {
+              b {
+                font-size: 30px;
+                font-weight: bold;
+              }
+            }
+          }
+          .ches_part {
+            color: #515658;
+          }
+          .ches_http {
+            font-size: 14px;
+            color: #1890ff;
+          }
+        }
+        .ches_btn {
+          width: 128px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 8px;
+          font-size: 20px;
+          background-color: #1890ff;
+          color: #fff;
+        }
+      }
+      .ches_img {
+        width: 176px;
+        height: 496px;
       }
     }
   }
