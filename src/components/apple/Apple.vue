@@ -46,6 +46,29 @@
           <img src="../../assets/imgs/che.png" alt="" />
         </div>
       </div>
+      <!-- 商品区域 -->
+      <div class="apple_goods">
+        <div class="goods_title">
+          <div class="gdstle_left">
+            <span><b>Check also</b></span>
+          </div>
+          <div class="gdstle_right">
+            <span>See all ></span>
+          </div>
+        </div>
+        <div>
+          <div class="gdstle_img">
+            <img src="" alt="" />
+          </div>
+          <div class="gdstle_jg">
+            <div>
+              <span><b>AirPods</b></span>
+            </div>
+            <div><span>$199.00</span></div>
+          </div>
+          <div class="gdstle_btn"><span>Buy</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -134,6 +157,7 @@ export default {
       justify-content: space-around;
       font-size: 12px;
       border-radius: 8px;
+      margin-bottom: 40px;
       .ches_con {
         display: flex;
         flex-direction: column;
@@ -154,6 +178,10 @@ export default {
           margin-top: -50px;
           .ches_head {
             p {
+              // width: 150px;
+              // white-space: nowrap;
+              // text-overflow: ellipsis;
+              // overflow: hidden;
               b {
                 font-size: 30px;
                 font-weight: bold;
@@ -162,6 +190,12 @@ export default {
           }
           .ches_part {
             color: #515658;
+            // p {
+            //   width: 150px;
+            //   white-space: nowrap;
+            //   text-overflow: ellipsis;
+            //   overflow: hidden;
+            // }
           }
           .ches_http {
             font-size: 14px;
@@ -180,8 +214,31 @@ export default {
         }
       }
       .ches_img {
-        width: 176px;
-        height: 496px;
+        img {
+          width: 176px;
+          height: 496px;
+        }
+      }
+    }
+    .apple_goods {
+      background-color: #fff;
+      border-radius: 8px;
+      .goods_title {
+        display: flex;
+        justify-content: space-around;
+        padding: 60px 0;
+        .gdstle_left {
+          font-size: 22px;
+          span {
+            b {
+              font-weight: bold;
+            }
+          }
+        }
+        .gdstle_right {
+          color: #2395ff;
+          font-size: 16px;
+        }
       }
     }
   }
