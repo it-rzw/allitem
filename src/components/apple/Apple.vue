@@ -56,17 +56,58 @@
             <span>See all ></span>
           </div>
         </div>
-        <div>
-          <div class="gdstle_img">
-            <img src="" alt="" />
-          </div>
-          <div class="gdstle_jg">
-            <div>
-              <span><b>AirPods</b></span>
+        <div class="goods">
+          <div class="gds_box">
+            <div class="gds_img">
+              <img src="../../assets/imgs/Airpods.png" alt="" />
             </div>
-            <div><span>$199.00</span></div>
+            <div class="gds_part">
+              <div class="gds_model">
+                <span><b>AirPods</b></span>
+              </div>
+              <div class="gds_price"><span>$199.00</span></div>
+              <div class="gds_btn"><span>Buy</span></div>
+            </div>
           </div>
-          <div class="gdstle_btn"><span>Buy</span></div>
+
+          <div class="gds_box">
+            <div class="gds_img">
+              <img src="../../assets/imgs/Apple card.png" alt="" />
+            </div>
+            <div class="gds_part">
+              <div class="gds_model">
+                <span><b>lphone XR</b></span>
+              </div>
+              <div class="gds_price"><span>$799.00</span></div>
+              <div class="gds_btn"><span>Buy</span></div>
+            </div>
+          </div>
+
+          <div class="gds_box">
+            <div class="gds_img">
+              <img src="../../assets/imgs/Apple tv.png" alt="" />
+            </div>
+            <div class="gds_part">
+              <div class="gds_model">
+                <span><b>Apple TV 4k</b></span>
+              </div>
+              <div class="gds_price"><span>$179.00</span></div>
+              <div class="gds_btn"><span>Buy</span></div>
+            </div>
+          </div>
+
+          <div class="gds_box">
+            <div class="gds_img">
+              <img src="../../assets/imgs/Apple card.png" alt="" />
+            </div>
+            <div class="gds_part">
+              <div class="gds_model">
+                <span><b>Apple Card</b></span>
+              </div>
+              <div class="gds_price"><span>Free*</span></div>
+              <div class="gds_btn"><span>Buy</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -91,6 +132,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+* {
+  box-sizing: border-box;
+}
 .apple {
   background-color: #f5f5f5;
   .out {
@@ -221,12 +265,13 @@ export default {
       }
     }
     .apple_goods {
+      height: 809px;
       background-color: #fff;
       border-radius: 8px;
       .goods_title {
         display: flex;
         justify-content: space-around;
-        padding: 60px 0;
+        padding: 60px 0 40px 0;
         .gdstle_left {
           font-size: 22px;
           span {
@@ -238,6 +283,50 @@ export default {
         .gdstle_right {
           color: #2395ff;
           font-size: 16px;
+        }
+      }
+      .goods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .gds_box {
+          width: 167px;
+          height: 269px;
+          font-size: 16px;
+          margin: 30px 0;
+          .gds_img {
+            height: 167px;
+            margin-bottom: 20px;
+            img {
+              width: 167px;
+              height: 167px;
+            }
+          }
+          .gds_part {
+            height: 85px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .gds_model {
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 19px;
+            }
+            .gds_price {
+              color: #5f6566;
+              font-size: 12px;
+              line-height: 20px;
+            }
+            .gds_btn {
+              width: 56px;
+              height: 24px;
+              background-color: #2395ff;
+              color: #fff;
+              text-align: center;
+              line-height: 24px;
+              border-radius: 4px;
+            }
+          }
         }
       }
     }
