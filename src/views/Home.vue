@@ -2,6 +2,13 @@
   <div class="home">
     <button @click="apple">apple</button>
     <button @click="popup">弹窗</button>
+    <button @click="practice">vue练习</button>
+    <!-- <button @click="popup">弹窗</button>
+    <button @click="popup">弹窗</button>
+    <button @click="popup">弹窗</button>
+    <button @click="popup">弹窗</button>
+    <button @click="popup">弹窗</button>
+    <button @click="popup">弹窗</button> -->
   </div>
 </template>
 
@@ -19,6 +26,9 @@ export default {
     },
     popup() {
       this.$router.push("/popup");
+    },
+    practice() {
+      this.$router.push("/practice");
     },
   },
 };

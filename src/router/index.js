@@ -24,6 +24,11 @@ const routes = [
     name: "Apple",
     component: () => import("../components/apple/Apple.vue"),
   },
+  {
+    path: "/Practice",
+    name: "Practice",
+    component: () => import("../components/practice/Practice.vue"),
+  },
 ];
 
 const router = new VueRouter({

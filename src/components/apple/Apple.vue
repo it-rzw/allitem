@@ -110,6 +110,55 @@
           </div>
         </div>
       </div>
+      <div class="footer">
+        <div class="footer_con_left">
+          <p
+            style="
+              padding-top: 20px;
+              padding-bottom: 10px;
+              font-size: 18px;
+              font-weight: 700;
+            "
+          >
+            Follow Us.
+          </p>
+          <p>We are always looking for new</p>
+          <p>projects and collaborations.</p>
+          <p>Feel free contact us.</p>
+          <div class="footer_tu">
+            <img src="../../assets/imgs/Vector.png" alt="" />
+            <img
+              src="../../assets/imgs/Vectorr.png"
+              alt=""
+              style="width: 18px"
+            />
+            <img
+              src="../../assets/imgs/Vectoor.png"
+              alt=""
+              style="width: 18px"
+            />
+          </div>
+        </div>
+        <div class="footer_con_right">
+          <p
+            style="
+              padding-top: 20px;
+              padding-bottom: 15px;
+              font-size: 18px;
+              font-weight: 700;
+              color: #0c1014;
+            "
+          >
+            Contact Us.
+          </p>
+          <p style="margin-bottom: 5px">One Apple Park Way</p>
+          <p>Cupertino,CA 95014</p>
+          <p style="padding-bottom: 10px; padding-top: 10px; color: #515658">
+            (408)996-1010
+          </p>
+          <p style="padding-bottom: 20px; color: #1890ff">support@apple.com</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -327,6 +376,51 @@ export default {
               border-radius: 4px;
             }
           }
+        }
+      }
+    }
+    .footer {
+      height: 250px;
+      background: white;
+      margin-top: 35px;
+      border-radius: 8px 8px 8px 8px;
+      margin-bottom: 35px;
+      display: flex;
+      font-size: 10px;
+      .footer_con_left {
+        width: 60%;
+        height: 250px;
+        // background: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        p {
+          padding-left: 20px;
+        }
+        .footer_tu {
+          width: 50%;
+          height: 30px;
+          // background: pink;
+          margin-left: 20px;
+          margin: 20px;
+          display: flex;
+          justify-content: space-between;
+          img {
+            width: 20px;
+            height: 30px;
+          }
+        }
+      }
+      .footer_con_right {
+        width: 40%;
+        height: 250px;
+        // background: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        p {
+          font-size: 11px;
+          color: #515658;
         }
       }
     }
